@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conctatar</title>
+</head>
+<body>
+
+    <h1>conctatanos</h1>
+
+    <form action="/conctato/" method="POST" >{% csrf_token %}
+
+
+        <P>Asunto: <input type="text" name="asunto"></P>
+        <P>EMAIL<input type="text" name="email"></P>
+        <P>Mensaje<textarea  name="mensaje" rows="15" cols="45"></textarea></P>
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+</body>
+</html>
